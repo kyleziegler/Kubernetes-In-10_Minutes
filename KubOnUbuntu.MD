@@ -1,11 +1,11 @@
 # Getting Started with Kubernetes on Ubuntu
 
-The fast and easy way to get started with Kubernetes - especially if you are running it on baremetal or a vanilla cloud VM instance.
+The fast and easy way to get started with Kubernetes - especially if you are running it on baremetal or a vanilla cloud Ubuntu VM instance.
 
 ### Create VM
 
 - Use the cloud vendor of your choice to spin up a vanilla Ubuntu VM v16.04 or higher.
-- I used Google Cloud Platform, on there just navigate to the Virtual Machines tab and create a VM in the region nearest you.
+- I used a simple shared v-core instance with 2gb of ram, plenty for creating an environment to play around with.  I've used Digital Ocean, Google Cloud Platform, and IBM's Cloud and they are all great for this pupose. 
 
 ### Installing Kubernetes
 
@@ -14,7 +14,14 @@ The fast and easy way to get started with Kubernetes - especially if you are run
 sudo apt update
 sudo apt install snapd
 ```
-2. 
+2. Once Snap is installed, we add conjure-up (Fast way to deploy software stacks). Docs located here: https://conjure-up.io/
+```
+sudo snap install conjure-up --classic
+```
+3. Finally, add kubernetes from the conjure up repo.
+```
+conjure-up kubernetes
+```
 
 ### Kubernetes setup
 1. 
