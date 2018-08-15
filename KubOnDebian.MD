@@ -1,10 +1,10 @@
-# Getting Started with Kubernetes on Ubuntu
+# Getting Started with Kubernetes on Debian
 
-The fast and easy way to get started with Kubernetes - especially if you are running it on baremetal or a vanilla cloud Ubuntu VM instance.
+The fast and easy way to get started with Kubernetes - especially if you are running it on baremetal or a vanilla cloud Debian VM instance.  Debian is a great OS to use because it's lightweight, stable, and secure.  You could use this same guide for Ubuntu and it will work the same, Ubuntu is also arguably better for beginners.
 
 ### Create VM
 
-- Use the cloud vendor of your choice to spin up a vanilla Ubuntu VM v16.04 or higher.
+- Use the cloud vendor of your choice to spin up a vanilla Debian 9 VM.
 - I used a simple shared v-core instance with 2gb of ram, plenty for creating an environment to play around with.  I've used Digital Ocean, Google Cloud Platform, and IBM's Cloud and they are all great for this pupose. 
 
 ### Installing Kubernetes
