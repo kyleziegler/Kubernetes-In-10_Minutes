@@ -38,11 +38,11 @@ microk8s.kubectl get nodes
 
 - You should see the name of the machine you are on, in my case: 
 
-![Kub get all nodes](https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/get_nodes.png)
+![Kub get all nodes](https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/get_nodes.png | width=300) 
 
 - To view more info on the nodes run 
 ```
 microk8s.kubectl describe nodes
 ```
-![Kub describe nodes](https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/describe.png)
+![Kub describe nodes](https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/describe.png | width=300) 
 
