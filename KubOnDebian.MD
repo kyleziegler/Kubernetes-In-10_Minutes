@@ -22,6 +22,26 @@ sudo snap install conjure-up --classic
 ```
 conjure-up kubernetes
 ```
+4. I chose the microk8s option on the conjure up install, and then restarted my VM
 
-### Kubernetes setup
-1. 
+### Getting started with Kubernetes - microk8s
+
+- In this tutorial we are creating one node, so when you run:
+```
+microk8s.kubectl get no
+```
+OR
+
+```
+microk8s.kubectl get nodes
+```
+
+- You should see the name of the machine you are on, in my case: 
+![Kub get all nodes](http://url/to/img.png)
+
+- To view more info on the nodes run 
+```
+microk8s.kubectl describe nodes
+```
+![Kub describe nodes](http://url/to/img.png)
+
