@@ -25,7 +25,7 @@ conjure-up kubernetes
 4. I chose the microk8s option on the conjure up install, and then restarted my VM
 
 ### Installing Lynx
-- We'll needs this later for testing our web app in the terminal
+- We'll need this later for testing our web app in the terminal
 ```
 sudo apt-get update
 sudo apt-get install lynx
@@ -67,7 +67,7 @@ microk8s.enable dns dashboard
 ```
 microk8s.kubectl run nginx --image nginx --replicas 2
 ```
-- image here of get all
+<img alt="Create pod" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/create_pod.png" width="600px"/> 
 
 ### Expose the deployment to port 80 
 
@@ -76,7 +76,7 @@ microk8s.kubectl run nginx --image nginx --replicas 2
 microk8s.kubectl expose deployment nginx --port 80 --target-port 80 --type ClusterIP --selector=run=nginx --name nginx
 ```
 
--image here of get all
+<img alt="Create pod" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/create_pod.png" width="600px"/> 
 
 ### Test nginx deployment
 
@@ -84,10 +84,11 @@ microk8s.kubectl expose deployment nginx --port 80 --target-port 80 --type Clust
 lynx http://(IP here from the service/nginx ClusterIP)
 ```
 
--image here from nginx screen
+<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/test_pod_results.png" width="600px"/> 
 
 ### Delete deployment 
 
+- Now we clean up our pods, deleting the environment we just created.
 
 ```
 microk8s.kubectl delete deploy/nginx
@@ -101,7 +102,15 @@ microk8s.kubectl delete svc/nginx
 microk8s.kubectl disable dashboard dns
 ```
 
-- image from get all after deleting
+<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/delete_pod.png" width="600px"/> 
+
+
+<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/get_all_after_delete.png" width="600px"/> 
+
+
+- Results from deleting the deployment, you can see that there are no more "nginx" descriptions here.
+
+<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/get_all_after_delete.png" width="600px"/> 
 
 ### Congrats!
 - You've reached the end of the tutorial, you can now launch web images to a kubernetes cluster, test, view, and delete them. Let me know if there's anything else you'd like to see in this tutorial!
