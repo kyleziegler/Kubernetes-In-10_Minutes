@@ -105,7 +105,7 @@ microk8s.kubectl disable dashboard dns
 <img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/delete_pod.png" width="600px"/> 
 
 
-<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/get_all_after_delete.png" width="600px"/> 
+<img alt="" src="https://github.com/kyleziegler/KubernetesGettingStarted/blob/master/img/delete_status.png" width="600px"/> 
 
 
 - Results from deleting the deployment, you can see that there are no more "nginx" descriptions here.
